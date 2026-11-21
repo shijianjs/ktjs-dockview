@@ -24,4 +24,5 @@
 - [x] demo：四页（概览 / 演练场 / API / 约定）+ 中英切换 + Playwright 8 个用例
 - [x] docs：四篇双语 + 首页 kit 五件套 + 右侧目录折叠
 - [x] 元数据：README（中英，根与模块）、AGENTS.md、LICENSE、Pages 工作流
-- [x] 建仓、提交、推送、开 Pages
+- [x] 建仓、提交、推送（<https://github.com/shijianjs/ktjs-dockview>，commit `7ef03ca`）
+- [x] Pages：<https://shijianjs.github.io/ktjs-dockview/>（legacy + `gh-pages`，文档根、`/demo/`、`/api/`、`/zh-Hans/` 均 200；Pages 工作流暂为手动，等 kit 发版再恢复 push 触发）
