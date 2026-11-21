@@ -1,0 +1,55 @@
+---
+title: ktjs-dockview
+description: Kotlin/JS wrapper for the dockview layout engine
+hide_table_of_contents: true
+---
+
+import logo from '@site/static/img/ktjs-dockview-logo.png';
+
+{/* The `<ktjs-…>` sections come from the ktjs-docusaurus kit: the Gradle plugin publishes its bundle
+    under `static/ktjs-client/`, and `ClientModule.kt` loads it once the page is hydrated. `href`s stay
+    relative so the same page works under both locale prefixes; `logo` is imported so the URL carries
+    whatever `baseUrl` this site is deployed under. */}
+
+<ktjs-hero logo-src={logo} title="ktjs-dockview" tagline="Kotlin/JS bindings for the dockview layout engine">
+
+<ktjs-action kind="primary" href="intro">Get started</ktjs-action>
+
+<ktjs-action kind="secondary" href="https://shijianjs.github.io/ktjs-dockview/demo/" icon="lucide:layout-dashboard">Live demo</ktjs-action>
+
+<ktjs-action kind="secondary" href="https://github.com/shijianjs/ktjs-dockview" icon="simple-icons:github">GitHub</ktjs-action>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-dockview/blob/main/LICENSE" src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></ktjs-badge>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-dockview" src="https://img.shields.io/badge/dockview-8.9.1-2A6DF4" alt="Upstream: dockview 8.9.1"></ktjs-badge>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-dockview" src="https://img.shields.io/badge/Kotlin%2FJS-2.4.21-7F52FF?logo=kotlin&logoColor=white" alt="Kotlin/JS"></ktjs-badge>
+</ktjs-hero>
+
+<ktjs-features section-title="What it wraps" tinted>
+
+<ktjs-feature icon="lucide:layout-dashboard" title="Dock, split, grid, panes">`createDockview`, `createSplitview`, `createGridview` and `createPaneview` — the four layouts upstream exports, each returning its own typed API.</ktjs-feature>
+
+<ktjs-feature icon="lucide:panel-top" title="Panels and groups">`addPanel`, `getPanel`, `removePanel`, `addGroup`, `maximizeGroup` — every member of `DockviewApi`, no dynamic calls.</ktjs-feature>
+
+<ktjs-feature icon="lucide:puzzle" title="A renderer a Kotlin class can implement">`IContentRenderer` is an interface, so `class PanelRenderer : IContentRenderer` is ordinary Kotlin; `init` receives the panel's own API and the dock's.</ktjs-feature>
+
+<ktjs-feature icon="lucide:radio" title="Events as function types">`onDidAddPanel.listen { }` returns a disposer; upstream's callable `Event<T>` is a function type here, never a wrapper class.</ktjs-feature>
+
+<ktjs-feature icon="lucide:palette" title="Themes as values">`themeDark`, `themeLight` and sixteen more are exported objects carrying `className` and `colorScheme`, so a typo does not compile.</ktjs-feature>
+
+<ktjs-feature icon="lucide:book-open" title="Docs in two languages">This site is a Kotlin/JS module built by ktjs-docusaurus: typed configuration, Markdown pages, English and Chinese.</ktjs-feature>
+
+</ktjs-features>
+
+<ktjs-next-steps section-title="Where to go next">
+
+<ktjs-step href="intro" title="Introduction">What the module contains, how a dock is put together, and what stays upstream.</ktjs-step>
+
+<ktjs-step href="guide/getting-started" title="Getting started">The dependency, the stylesheet, and the first dock.</ktjs-step>
+
+<ktjs-step href="guide/usage" title="Usage">Panels, groups, events, layouts, themes, and the other three factories.</ktjs-step>
+
+<ktjs-step href="https://shijianjs.github.io/ktjs-dockview/api/" title="API reference">Dokka output for the published module.</ktjs-step>
+
+</ktjs-next-steps>

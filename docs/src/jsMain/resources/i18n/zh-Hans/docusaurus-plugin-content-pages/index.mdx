@@ -1,0 +1,54 @@
+---
+title: ktjs-dockview
+description: "dockview 布局引擎的 Kotlin/JS 封装"
+hide_table_of_contents: true
+---
+
+import logo from '@site/static/img/ktjs-dockview-logo.png';
+
+{/* `<ktjs-…>` 分区来自 ktjs-docusaurus 的工具箱：Gradle 插件把它的 bundle 放到 `static/ktjs-client/`，
+    `ClientModule.kt` 在页面 hydrate 之后加载它。`href` 写成相对路径，两种 locale 前缀下都能用；
+    `logo` 用 import 取，这样 URL 会带上本站实际的 `baseUrl`。 */}
+
+<ktjs-hero logo-src={logo} title="ktjs-dockview" tagline="dockview 布局引擎的 Kotlin/JS 绑定">
+
+<ktjs-action kind="primary" href="intro">开始使用</ktjs-action>
+
+<ktjs-action kind="secondary" href="https://shijianjs.github.io/ktjs-dockview/demo/" icon="lucide:layout-dashboard">在线 demo</ktjs-action>
+
+<ktjs-action kind="secondary" href="https://github.com/shijianjs/ktjs-dockview" icon="simple-icons:github">GitHub</ktjs-action>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-dockview/blob/main/LICENSE" src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></ktjs-badge>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-dockview" src="https://img.shields.io/badge/dockview-8.9.1-2A6DF4" alt="Upstream: dockview 8.9.1"></ktjs-badge>
+
+<ktjs-badge href="https://github.com/shijianjs/ktjs-dockview" src="https://img.shields.io/badge/Kotlin%2FJS-2.4.21-7F52FF?logo=kotlin&logoColor=white" alt="Kotlin/JS"></ktjs-badge>
+</ktjs-hero>
+
+<ktjs-features section-title="封装了什么" tinted>
+
+<ktjs-feature icon="lucide:layout-dashboard" title="dock、分栏、网格、窗格">`createDockview`、`createSplitview`、`createGridview`、`createPaneview`——上游导出的四种布局，各自返回带类型的 API。</ktjs-feature>
+
+<ktjs-feature icon="lucide:panel-top" title="面板与分组">`addPanel`、`getPanel`、`removePanel`、`addGroup`、`maximizeGroup`——`DockviewApi` 的每个成员都在，不用 dynamic。</ktjs-feature>
+
+<ktjs-feature icon="lucide:puzzle" title="Kotlin 类能直接实现的渲染器">`IContentRenderer` 是接口，`class PanelRenderer : IContentRenderer` 就是普通 Kotlin；`init` 同时拿到面板自己和整个 dock 的 API。</ktjs-feature>
+
+<ktjs-feature icon="lucide:radio" title="事件就是函数类型">`onDidAddPanel.listen { }` 返回 disposer；上游的可调用 `Event<T>` 在这里是函数类型，不再用类包一层。</ktjs-feature>
+
+<ktjs-feature icon="lucide:palette" title="主题是值">`themeDark`、`themeLight` 等 18 个是带 `className` 与 `colorScheme` 的导出对象，写错名字就编译不过。</ktjs-feature>
+
+<ktjs-feature icon="lucide:book-open" title="双语文档">本站本身是一个 Kotlin/JS 模块，由 ktjs-docusaurus 构建：类型化配置、Markdown 页面、中英双语。</ktjs-feature>
+
+</ktjs-features>
+
+<ktjs-next-steps section-title="下一步">
+
+<ktjs-step href="intro" title="简介">模块里有什么、一个 dock 怎么组成、哪些仍归上游。</ktjs-step>
+
+<ktjs-step href="guide/getting-started" title="快速开始">依赖、样式表、第一个 dock。</ktjs-step>
+
+<ktjs-step href="guide/usage" title="使用">面板、分组、事件、布局、主题，以及另外三个工厂。</ktjs-step>
+
+<ktjs-step href="https://shijianjs.github.io/ktjs-dockview/api/" title="API 文档">发布模块的 Dokka 输出。</ktjs-step>
+
+</ktjs-next-steps>
