@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":ktjs-dockview/commonMain":[],":ktjs-dockview/jsMain":[":ktjs-dockview/webMain"],":ktjs-dockview/webMain":[":ktjs-dockview/commonMain"]}'

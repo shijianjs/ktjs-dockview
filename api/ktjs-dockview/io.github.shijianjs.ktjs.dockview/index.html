@@ -1,0 +1,1138 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>io.github.shijianjs.ktjs.dockview</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script></head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+<a class="library-name--link" href="../../index.html" tabindex="1">
+                    ktjs-dockview
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector js-like" data-active="" aria-pressed="true" data-filter=":ktjs-dockview/jsMain">js</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option js-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":ktjs-dockview/jsMain" data-filter=":ktjs-dockview/jsMain">
+                                <span class="checkbox--icon"></span>
+                                js
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config="{&quot;defaultSize&quot;: 280, &quot;minSize&quot;: 200, &quot;maxSize&quot;: 400}">
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    ktjs-dockview
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageids="ktjs-dockview::io.github.shijianjs.ktjs.dockview////PointingToDeclaration//-1276555218">
+  <div class="breadcrumbs"><a href="../index.html">ktjs-dockview</a><span class="delimiter">/</span><span class="current">io.github.shijianjs.ktjs.dockview</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button><button class="section-tab" data-togglable="PROPERTY,EXTENSION_PROPERTY">Properties</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-1863952153%2FClasslikes%2F-1276555218" anchor-label="AddGridviewComponentOptions" id="-1863952153%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-add-gridview-component-options/index.html"><span>Add</span><wbr><span>Gridview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1863952153%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-add-gridview-component-options/index.html">AddGridviewComponentOptions</a></div><div class="brief "><p class="paragraph">One grid panel to add.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="923589652%2FClasslikes%2F-1276555218" anchor-label="AddGroupOptions" id="923589652%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-add-group-options/index.html"><span>Add</span><wbr><span>Group</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="923589652%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-add-group-options/index.html">AddGroupOptions</a></div><div class="brief "><p class="paragraph">One group to add.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-7562343%2FClasslikes%2F-1276555218" anchor-label="AddPanelOptions" id="-7562343%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-add-panel-options/index.html"><span>Add</span><wbr><span>Panel</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-7562343%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-add-panel-options/index.html">AddPanelOptions</a></div><div class="brief "><p class="paragraph">One panel to add: <code class="lang-kotlin">component</code> names a renderer the factory can build.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1155379195%2FClasslikes%2F-1276555218" anchor-label="AddPaneviewComponentOptions" id="-1155379195%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-add-paneview-component-options/index.html"><span>Add</span><wbr><span>Paneview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1155379195%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-add-paneview-component-options/index.html">AddPaneviewComponentOptions</a></div><div class="brief "><p class="paragraph">One pane to add.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2143954033%2FClasslikes%2F-1276555218" anchor-label="AddSplitviewComponentOptions" id="-2143954033%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-add-splitview-component-options/index.html"><span>Add</span><wbr><span>Splitview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2143954033%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-add-splitview-component-options/index.html">AddSplitviewComponentOptions</a></div><div class="brief "><p class="paragraph">One split view panel to add.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-82531535%2FClasslikes%2F-1276555218" anchor-label="CreateComponentOptions" id="-82531535%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-create-component-options/index.html"><span>Create</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-82531535%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-create-component-options/index.html">CreateComponentOptions</a></div><div class="brief "><p class="paragraph">The name a renderer is registered under and the component it draws.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2080736622%2FClasslikes%2F-1276555218" anchor-label="DockviewApi" id="-2080736622%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-api/index.html"><span>Dockview</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2080736622%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-dockview-api/index.html">DockviewApi</a></div><div class="brief "><p class="paragraph">The layout API a page works with.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-343558961%2FClasslikes%2F-1276555218" anchor-label="DockviewComponent" id="-343558961%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-component/index.html"><span>Dockview</span><wbr><span><span>Component</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-343558961%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-dockview-component/index.html">DockviewComponent</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><span data-unresolved-link="web.html/HTMLElement///PointingToDeclaration/">HTMLElement</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="-dockview-component-options/index.html">DockviewComponentOptions</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">The dock component itself.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1674021611%2FClasslikes%2F-1276555218" anchor-label="DockviewComponentOptions" id="-1674021611%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-component-options/index.html"><span>Dockview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1674021611%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-dockview-component-options/index.html">DockviewComponentOptions</a> : <a href="-dockview-options/index.html">DockviewOptions</a></div><div class="brief "><p class="paragraph">The dock component's options: <a href="-dockview-options/index.html">DockviewOptions</a> plus the renderer factory upstream requires.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1705895607%2FClasslikes%2F-1276555218" anchor-label="DockviewEventSource" id="1705895607%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-event-source/index.html"><span>Dockview</span><wbr><span>Event</span><wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1705895607%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">typealias </span><a href="-dockview-event-source/index.html">DockviewEventSource</a><span class="token operator">&lt;</span><a href="-dockview-event-source/index.html">T</a><span class="token operator">&gt;</span><span class="token operator"> = </span><span class="token punctuation">(</span><span class="token punctuation">(</span><a href="-dockview-event-source/index.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-dockview-i-disposable/index.html">DockviewIDisposable</a></div><div class="brief "><p class="paragraph">Upstream's <code class="lang-kotlin">Event&lt;T&gt;</code> — a JS function object, <code class="lang-kotlin">event(listener)</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1786379633%2FClasslikes%2F-1276555218" anchor-label="DockviewGroupPanel" id="1786379633%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-group-panel/index.html"><span>Dockview</span><wbr><span>Group</span><wbr><span><span>Panel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1786379633%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-dockview-group-panel/index.html">DockviewGroupPanel</a></div><div class="brief "><p class="paragraph">A group: one tab strip and the panels under it.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1102033463%2FClasslikes%2F-1276555218" anchor-label="DockviewGroupPanelApi" id="1102033463%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-group-panel-api/index.html"><span>Dockview</span><wbr><span>Group</span><wbr><span>Panel</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1102033463%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-dockview-group-panel-api/index.html">DockviewGroupPanelApi</a></div><div class="brief "><p class="paragraph">The API of a single group.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1912466915%2FClasslikes%2F-1276555218" anchor-label="DockviewIDisposable" id="1912466915%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-i-disposable/index.html"><span>Dockview</span><wbr><span><span>IDisposable</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1912466915%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-dockview-i-disposable/index.html">DockviewIDisposable</a></div><div class="brief "><p class="paragraph">The disposer every subscription and component hands back.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1217049870%2FClasslikes%2F-1276555218" anchor-label="DockviewOptions" id="1217049870%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-options/index.html"><span>Dockview</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1217049870%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-dockview-options/index.html">DockviewOptions</a></div><div class="brief "><p class="paragraph">The dock options a page sets once.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-139304152%2FClasslikes%2F-1276555218" anchor-label="DockviewPanel" id="-139304152%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-panel/index.html"><span>Dockview</span><wbr><span><span>Panel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-139304152%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-dockview-panel/index.html">DockviewPanel</a></div><div class="brief "><p class="paragraph">A panel: one tab plus the content its renderer draws.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="934567200%2FClasslikes%2F-1276555218" anchor-label="DockviewPanelApi" id="934567200%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-panel-api/index.html"><span>Dockview</span><wbr><span>Panel</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="934567200%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-dockview-panel-api/index.html">DockviewPanelApi</a></div><div class="brief "><p class="paragraph">The API of a single panel: title, activation and the events around them.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1641172739%2FClasslikes%2F-1276555218" anchor-label="DockviewTheme" id="1641172739%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-dockview-theme/index.html"><span>Dockview</span><wbr><span><span>Theme</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1641172739%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-dockview-theme/index.html">DockviewTheme</a></div><div class="brief "><p class="paragraph">A theme: a name and the class that carries its CSS variables.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="320526245%2FClasslikes%2F-1276555218" anchor-label="GridviewApi" id="320526245%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gridview-api/index.html"><span>Gridview</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="320526245%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-gridview-api/index.html">GridviewApi</a></div><div class="brief "><p class="paragraph">The grid view API: <code class="lang-kotlin">createGridview</code> returns this.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-154325278%2FClasslikes%2F-1276555218" anchor-label="GridviewComponentOptions" id="-154325278%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gridview-component-options/index.html"><span>Gridview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-154325278%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-gridview-component-options/index.html">GridviewComponentOptions</a> : <a href="-gridview-options/index.html">GridviewOptions</a></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">createGridview</code> options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1732268193%2FClasslikes%2F-1276555218" anchor-label="GridviewOptions" id="1732268193%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gridview-options/index.html"><span>Gridview</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1732268193%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-gridview-options/index.html">GridviewOptions</a></div><div class="brief "><p class="paragraph">Grid view options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1076873083%2FClasslikes%2F-1276555218" anchor-label="GridviewPanel" id="1076873083%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-gridview-panel/index.html"><span>Gridview</span><wbr><span><span>Panel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1076873083%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-gridview-panel/index.html">GridviewPanel</a></div><div class="brief "><p class="paragraph">A grid view panel.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1458762108%2FClasslikes%2F-1276555218" anchor-label="GroupPanelPartInitParameters" id="1458762108%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-group-panel-part-init-parameters/index.html"><span>Group</span><wbr><span>Panel</span><wbr><span>Part</span><wbr><span>Init</span><wbr><span><span>Parameters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1458762108%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-group-panel-part-init-parameters/index.html">GroupPanelPartInitParameters</a></div><div class="brief "><p class="paragraph">What dockview hands a content renderer in <code class="lang-kotlin">init</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="677727483%2FClasslikes%2F-1276555218" anchor-label="IContentRenderer" id="677727483%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-content-renderer/index.html"><span>IContent</span><wbr><span><span>Renderer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="677727483%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-content-renderer/index.html">IContentRenderer</a></div><div class="brief "><p class="paragraph">The content of a panel, as a plain object: an element, an <code class="lang-kotlin">init</code>, and a <code class="lang-kotlin">dispose</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="369829424%2FClasslikes%2F-1276555218" anchor-label="IPanePart" id="369829424%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-pane-part/index.html"><span>IPane</span><wbr><span><span>Part</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="369829424%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-i-pane-part/index.html">IPanePart</a></div><div class="brief "><p class="paragraph">The pane content of a pane view; the same element-plus-init shape.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-650611084%2FClasslikes%2F-1276555218" anchor-label="LayoutChangeEvent" id="-650611084%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-layout-change-event/index.html"><span>Layout</span><wbr><span>Change</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-650611084%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-layout-change-event/index.html">LayoutChangeEvent</a></div><div class="brief "><p class="paragraph">The payload of <code class="lang-kotlin">onDidLayoutChange</code>: the reasons that fired, as upstream's <code class="lang-kotlin">ReadonlySet</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="277056152%2FClasslikes%2F-1276555218" anchor-label="PanelApi" id="277056152%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-panel-api/index.html"><span>Panel</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="277056152%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-panel-api/index.html">PanelApi</a></div><div class="brief "><p class="paragraph">The base panel API every component shares.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="73770951%2FClasslikes%2F-1276555218" anchor-label="PaneviewApi" id="73770951%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paneview-api/index.html"><span>Paneview</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="73770951%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-paneview-api/index.html">PaneviewApi</a></div><div class="brief "><p class="paragraph">The pane view API: <code class="lang-kotlin">createPaneview</code> returns this.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="554247680%2FClasslikes%2F-1276555218" anchor-label="PaneviewComponentOptions" id="554247680%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paneview-component-options/index.html"><span>Paneview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="554247680%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-paneview-component-options/index.html">PaneviewComponentOptions</a> : <a href="-paneview-options/index.html">PaneviewOptions</a></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">createPaneview</code> options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="411189187%2FClasslikes%2F-1276555218" anchor-label="PaneviewOptions" id="411189187%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paneview-options/index.html"><span>Paneview</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="411189187%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-paneview-options/index.html">PaneviewOptions</a></div><div class="brief "><p class="paragraph">Pane view options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="168236829%2FClasslikes%2F-1276555218" anchor-label="PaneviewPanel" id="168236829%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-paneview-panel/index.html"><span>Paneview</span><wbr><span><span>Panel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="168236829%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-paneview-panel/index.html">PaneviewPanel</a></div><div class="brief "><p class="paragraph">A pane view panel.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1740548718%2FClasslikes%2F-1276555218" anchor-label="SerializedDockview" id="-1740548718%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-serialized-dockview/index.html"><span>Serialized</span><wbr><span><span>Dockview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1740548718%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-serialized-dockview/index.html">SerializedDockview</a></div><div class="brief "><p class="paragraph">The serialized layout.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-128712263%2FClasslikes%2F-1276555218" anchor-label="SerializedSplitview" id="-128712263%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-serialized-splitview/index.html"><span>Serialized</span><wbr><span><span>Splitview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-128712263%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-serialized-splitview/index.html">SerializedSplitview</a></div><div class="brief "><p class="paragraph">The split view serialized shape; opaque for the same reason.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-362165165%2FClasslikes%2F-1276555218" anchor-label="SplitviewApi" id="-362165165%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-splitview-api/index.html"><span>Splitview</span><wbr><span><span>Api</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-362165165%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-splitview-api/index.html">SplitviewApi</a></div><div class="brief "><p class="paragraph">The split view API: <code class="lang-kotlin">createSplitview</code> returns this.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-685128460%2FClasslikes%2F-1276555218" anchor-label="SplitviewComponentOptions" id="-685128460%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-splitview-component-options/index.html"><span>Splitview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-685128460%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-splitview-component-options/index.html">SplitviewComponentOptions</a> : <a href="-splitview-options/index.html">SplitviewOptions</a></div><div class="brief "><p class="paragraph"><code class="lang-kotlin">createSplitview</code> options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1602829903%2FClasslikes%2F-1276555218" anchor-label="SplitviewOptions" id="1602829903%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-splitview-options/index.html"><span>Splitview</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1602829903%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-splitview-options/index.html">SplitviewOptions</a></div><div class="brief "><p class="paragraph">Split view options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2140424361%2FClasslikes%2F-1276555218" anchor-label="SplitviewPanel" id="2140424361%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-splitview-panel/index.html"><span>Splitview</span><wbr><span><span>Panel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2140424361%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">external </span><span class="token keyword">class </span><a href="-splitview-panel/index.html">SplitviewPanel</a></div><div class="brief "><p class="paragraph">A split view panel.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="470328108%2FClasslikes%2F-1276555218" anchor-label="TitleEvent" id="470328108%2FClasslikes%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-title-event/index.html"><span>Title</span><wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="470328108%2FClasslikes%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">interface </span><a href="-title-event/index.html">TitleEvent</a></div><div class="brief "><p class="paragraph">The payload of <code class="lang-kotlin">onDidTitleChange</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1048781090%2FProperties%2F-1276555218" anchor-label="themeAbyss" id="1048781090%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-abyss.html"><span>theme</span><wbr><span><span>Abyss</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1048781090%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-abyss.html">themeAbyss</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1292256996%2FProperties%2F-1276555218" anchor-label="themeAbyssSpaced" id="1292256996%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-abyss-spaced.html"><span>theme</span><wbr><span>Abyss</span><wbr><span><span>Spaced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1292256996%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-abyss-spaced.html">themeAbyssSpaced</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-696949180%2FProperties%2F-1276555218" anchor-label="themeCatppuccinMocha" id="-696949180%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-catppuccin-mocha.html"><span>theme</span><wbr><span>Catppuccin</span><wbr><span><span>Mocha</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-696949180%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-catppuccin-mocha.html">themeCatppuccinMocha</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1140544890%2FProperties%2F-1276555218" anchor-label="themeCatppuccinMochaSpaced" id="-1140544890%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-catppuccin-mocha-spaced.html"><span>theme</span><wbr><span>Catppuccin</span><wbr><span>Mocha</span><wbr><span><span>Spaced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1140544890%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-catppuccin-mocha-spaced.html">themeCatppuccinMochaSpaced</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="741238314%2FProperties%2F-1276555218" anchor-label="themeDark" id="741238314%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-dark.html"><span>theme</span><wbr><span><span>Dark</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="741238314%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-dark.html">themeDark</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div><div class="brief "><p class="paragraph">Theme names are exported values, not strings: <code class="lang-kotlin">themeDark</code> is <code class="lang-kotlin">{ name, className, … }</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-961159296%2FProperties%2F-1276555218" anchor-label="themeDracula" id="-961159296%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-dracula.html"><span>theme</span><wbr><span><span>Dracula</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-961159296%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-dracula.html">themeDracula</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1746674375%2FProperties%2F-1276555218" anchor-label="themeGithubDark" id="1746674375%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-github-dark.html"><span>theme</span><wbr><span>Github</span><wbr><span><span>Dark</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1746674375%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-github-dark.html">themeGithubDark</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="511621321%2FProperties%2F-1276555218" anchor-label="themeGithubDarkSpaced" id="511621321%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-github-dark-spaced.html"><span>theme</span><wbr><span>Github</span><wbr><span>Dark</span><wbr><span><span>Spaced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="511621321%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-github-dark-spaced.html">themeGithubDarkSpaced</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1167240615%2FProperties%2F-1276555218" anchor-label="themeGithubLight" id="1167240615%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-github-light.html"><span>theme</span><wbr><span>Github</span><wbr><span><span>Light</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1167240615%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-github-light.html">themeGithubLight</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-254174295%2FProperties%2F-1276555218" anchor-label="themeGithubLightSpaced" id="-254174295%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-github-light-spaced.html"><span>theme</span><wbr><span>Github</span><wbr><span>Light</span><wbr><span><span>Spaced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-254174295%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-github-light-spaced.html">themeGithubLightSpaced</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="63493796%2FProperties%2F-1276555218" anchor-label="themeLight" id="63493796%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-light.html"><span>theme</span><wbr><span><span>Light</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="63493796%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-light.html">themeLight</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-279293210%2FProperties%2F-1276555218" anchor-label="themeLightSpaced" id="-279293210%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-light-spaced.html"><span>theme</span><wbr><span>Light</span><wbr><span><span>Spaced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-279293210%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-light-spaced.html">themeLightSpaced</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2052442538%2FProperties%2F-1276555218" anchor-label="themeMonokai" id="2052442538%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-monokai.html"><span>theme</span><wbr><span><span>Monokai</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2052442538%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-monokai.html">themeMonokai</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-406162291%2FProperties%2F-1276555218" anchor-label="themeNord" id="-406162291%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-nord.html"><span>theme</span><wbr><span><span>Nord</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-406162291%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-nord.html">themeNord</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1719541263%2FProperties%2F-1276555218" anchor-label="themeNordSpaced" id="1719541263%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-nord-spaced.html"><span>theme</span><wbr><span>Nord</span><wbr><span><span>Spaced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1719541263%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-nord-spaced.html">themeNordSpaced</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1821236219%2FProperties%2F-1276555218" anchor-label="themeSolarizedLight" id="1821236219%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-solarized-light.html"><span>theme</span><wbr><span>Solarized</span><wbr><span><span>Light</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1821236219%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-solarized-light.html">themeSolarizedLight</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1774566141%2FProperties%2F-1276555218" anchor-label="themeSolarizedLightSpaced" id="1774566141%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-solarized-light-spaced.html"><span>theme</span><wbr><span>Solarized</span><wbr><span>Light</span><wbr><span><span>Spaced</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1774566141%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-solarized-light-spaced.html">themeSolarizedLightSpaced</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1128149654%2FProperties%2F-1276555218" anchor-label="themeVisualStudio" id="-1128149654%2FProperties%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="theme-visual-studio.html"><span>theme</span><wbr><span>Visual</span><wbr><span><span>Studio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1128149654%2FProperties%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">val </span><a href="theme-visual-studio.html">themeVisualStudio</a><span class="token operator">: </span><a href="-dockview-theme/index.html">DockviewTheme</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="tableheader">Functions</h2>
+        <div class="table"><a data-name="1219675408%2FFunctions%2F-1276555218" anchor-label="addGroupOptions" id="1219675408%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-group-options.html"><span>add</span><wbr><span>Group</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1219675408%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-group-options.html"><span class="token function">addGroupOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">configure<span class="token operator">: </span><a href="-add-group-options/index.html">AddGroupOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-add-group-options/index.html">AddGroupOptions</a></div><div class="brief "><p class="paragraph">Builds an <a href="-add-group-options/index.html">AddGroupOptions</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1097408954%2FFunctions%2F-1276555218" anchor-label="addPanelOptions" id="-1097408954%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-panel-options.html"><span>add</span><wbr><span>Panel</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1097408954%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-panel-options.html"><span class="token function">addPanelOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">configure<span class="token operator">: </span><a href="-add-panel-options/index.html">AddPanelOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-add-panel-options/index.html">AddPanelOptions</a></div><div class="brief "><p class="paragraph">Builds an <a href="-add-panel-options/index.html">AddPanelOptions</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-315631505%2FFunctions%2F-1276555218" anchor-label="createDockview" id="-315631505%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-dockview.html"><span>create</span><wbr><span><span>Dockview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-315631505%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="create-dockview.html"><span class="token function">createDockview</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><span data-unresolved-link="web.html/HTMLElement///PointingToDeclaration/">HTMLElement</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="-dockview-component-options/index.html">DockviewComponentOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-dockview-api/index.html">DockviewApi</a></div><div class="brief "><p class="paragraph">Creates a dock layout: tabs, groups, split views and drag-and-drop.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1212489201%2FFunctions%2F-1276555218" anchor-label="createGridview" id="-1212489201%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-gridview.html"><span>create</span><wbr><span><span>Gridview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1212489201%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="create-gridview.html"><span class="token function">createGridview</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><span data-unresolved-link="web.html/HTMLElement///PointingToDeclaration/">HTMLElement</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="-gridview-component-options/index.html">GridviewComponentOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-gridview-api/index.html">GridviewApi</a></div><div class="brief "><p class="paragraph">Creates a grid of panels without tabs or docking.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="883271119%2FFunctions%2F-1276555218" anchor-label="createPaneview" id="883271119%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-paneview.html"><span>create</span><wbr><span><span>Paneview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="883271119%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="create-paneview.html"><span class="token function">createPaneview</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><span data-unresolved-link="web.html/HTMLElement///PointingToDeclaration/">HTMLElement</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="-paneview-component-options/index.html">PaneviewComponentOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-paneview-api/index.html">PaneviewApi</a></div><div class="brief "><p class="paragraph">Creates an accordion-style pane view.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="942240995%2FFunctions%2F-1276555218" anchor-label="createSplitview" id="942240995%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-splitview.html"><span>create</span><wbr><span><span>Splitview</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="942240995%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">external </span><span class="token keyword">fun </span><a href="create-splitview.html"><span class="token function">createSplitview</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">element<span class="token operator">: </span><span data-unresolved-link="web.html/HTMLElement///PointingToDeclaration/">HTMLElement</span><span class="token punctuation">, </span></span><span class="parameter ">options<span class="token operator">: </span><a href="-splitview-component-options/index.html">SplitviewComponentOptions</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-splitview-api/index.html">SplitviewApi</a></div><div class="brief "><p class="paragraph">Creates a one-dimensional split view.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="859905952%2FFunctions%2F-1276555218" anchor-label="dockviewComponentOptions" id="859905952%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dockview-component-options.html"><span>dockview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="859905952%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="dockview-component-options.html"><span class="token function">dockviewComponentOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">createComponent<span class="token operator">: </span><span class="token punctuation">(</span><a href="-create-component-options/index.html">CreateComponentOptions</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-i-content-renderer/index.html">IContentRenderer</a><span class="token punctuation">, </span></span><span class="parameter ">configure<span class="token operator">: </span><a href="-dockview-options/index.html">DockviewOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-dockview-component-options/index.html">DockviewComponentOptions</a></div><div class="brief "><p class="paragraph">Builds the dock component options: the renderer factory plus the plain options.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1755451292%2FFunctions%2F-1276555218" anchor-label="dockviewOptions" id="1755451292%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dockview-options.html"><span>dockview</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1755451292%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="dockview-options.html"><span class="token function">dockviewOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">configure<span class="token operator">: </span><a href="-dockview-options/index.html">DockviewOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-dockview-options/index.html">DockviewOptions</a></div><div class="brief "><p class="paragraph">Builds a <a href="-dockview-options/index.html">DockviewOptions</a> with only the fields the lambda sets.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-557537783%2FFunctions%2F-1276555218" anchor-label="gridviewComponentOptions" id="-557537783%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="gridview-component-options.html"><span>gridview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-557537783%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="gridview-component-options.html"><span class="token function">gridviewComponentOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">orientation<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">createComponent<span class="token operator">: </span><span class="token punctuation">(</span><a href="-create-component-options/index.html">CreateComponentOptions</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-gridview-panel/index.html">GridviewPanel</a><span class="token punctuation">, </span></span><span class="parameter ">configure<span class="token operator">: </span><a href="-gridview-options/index.html">GridviewOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-gridview-component-options/index.html">GridviewComponentOptions</a></div><div class="brief "><p class="paragraph">Builds a <a href="-gridview-component-options/index.html">GridviewComponentOptions</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-467618745%2FFunctions%2F-1276555218" anchor-label="listen" id="-467618745%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="listen.html"><span><span>listen</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-467618745%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="listen.html">T</a><span class="token operator">&gt; </span><a href="-dockview-event-source/index.html">DockviewEventSource</a><span class="token operator">&lt;</span><a href="listen.html">T</a><span class="token operator">&gt;</span><span class="token punctuation">.</span><a href="listen.html"><span class="token function">listen</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">listener<span class="token operator">: </span><span class="token punctuation">(</span><a href="listen.html">T</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-dockview-i-disposable/index.html">DockviewIDisposable</a></div><div class="brief "><p class="paragraph">Subscribes a listener and returns the disposer; <code class="lang-kotlin">event.listen { … }</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1660676363%2FFunctions%2F-1276555218" anchor-label="paneviewComponentOptions" id="-1660676363%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="paneview-component-options.html"><span>paneview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1660676363%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="paneview-component-options.html"><span class="token function">paneviewComponentOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">createComponent<span class="token operator">: </span><span class="token punctuation">(</span><a href="-create-component-options/index.html">CreateComponentOptions</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-i-pane-part/index.html">IPanePart</a><span class="token punctuation">, </span></span><span class="parameter ">configure<span class="token operator">: </span><a href="-paneview-options/index.html">PaneviewOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-paneview-component-options/index.html">PaneviewComponentOptions</a></div><div class="brief "><p class="paragraph">Builds a <a href="-paneview-component-options/index.html">PaneviewComponentOptions</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1821849034%2FFunctions%2F-1276555218" anchor-label="splitviewComponentOptions" id="-1821849034%2FFunctions%2F-1276555218" data-filterable-set=":ktjs-dockview/jsMain"></a>
+          <div class="table-row table-row_content" data-filterable-current=":ktjs-dockview/jsMain" data-filterable-set=":ktjs-dockview/jsMain">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="splitview-component-options.html"><span>splitview</span><wbr><span>Component</span><wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1821849034%2FFunctions%2F-1276555218"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":ktjs-dockview/jsMain"><div class="symbol monospace"><span class="token keyword">fun </span><a href="splitview-component-options.html"><span class="token function">splitviewComponentOptions</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">createComponent<span class="token operator">: </span><span class="token punctuation">(</span><a href="-create-component-options/index.html">CreateComponentOptions</a><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="-splitview-panel/index.html">SplitviewPanel</a><span class="token punctuation">, </span></span><span class="parameter ">configure<span class="token operator">: </span><a href="-splitview-options/index.html">SplitviewOptions</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a><span class="token operator"> = </span>{}</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-splitview-component-options/index.html">SplitviewComponentOptions</a></div><div class="brief "><p class="paragraph">Builds a <a href="-splitview-component-options/index.html">SplitviewComponentOptions</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
